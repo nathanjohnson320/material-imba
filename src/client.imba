@@ -1,18 +1,23 @@
-# import {Button} from './button/button'
+import {Button} from './button/button'
 # import {Icon, Sizes} from './icon/icon'
 # import {Grid, Row, Column} from './grid/grid'
 import {Drawer, ToolbarSpacer} from './drawer/drawer'
 import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {Icon, Sizes} from './icon/icon'
 import {List, ListItem, Divider} from './list/list'
+import {Card} from './card/card'
+
 var store = {
 	menuOpen: false
 }
 
 tag MyAppBar < TopAppBar
+	def toggle
+		store:menuOpen = !store:menuOpen
+
 	def menu
 		<@menu css:display="flex">
-			<Icon icon="menu" color="white">
+			<Icon icon="menu" color="white" :click="toggle">
 			<AppBarTitle> "Material Imba"
 
 	def actions
@@ -29,7 +34,7 @@ tag MyDrawer < Drawer
 
 	def body
 		<@body>
-			<MyAppBar title="The Title">
+			<MyAppBar>
 			<ToolbarSpacer>
 			<List>
 				<ListItem> "Sup"
@@ -38,14 +43,24 @@ tag MyDrawer < Drawer
 				<ListItem> "Sup"
 				<ListItem> "Hello"
 
-tag App
-	def toggle
-		data:menuOpen = !data:menuOpen
+tag MyCard < Card
+	def body
+		<@body>
+			"Important content goes here"
 
+	def actions
+		<@actions>
+			<Button ripple=true> "Action 1"
+			<Button ripple=true> "Action 2"
+
+tag App
 	def render
 		<self>
-			<button :click="toggle"> "Toggle"
+			<MyAppBar>
 			<MyDrawer open=data:menuOpen>
+			<div .main-content>
+				<MyCard outlined=false>
+
 
 
 Imba.mount <App[store]>

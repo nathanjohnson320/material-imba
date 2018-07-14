@@ -1,0 +1,8 @@
+body {
+  margin: 0px;
+}
+
+.main-content {
+  padding-top: 64px;
+  height: calc(100vh - 64px);
+}

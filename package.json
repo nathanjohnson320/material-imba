@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@material/button": "^0.37.0",
+    "@material/card": "^0.37.0",
     "@material/drawer": "^0.36.1",
     "@material/layout-grid": "^0.34.0",
     "@material/list": "^0.37.0",
