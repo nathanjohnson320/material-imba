@@ -4,7 +4,9 @@
     "dev": "webpack-dev-server --content-base dist/",
     "build-dev": "NODE_ENV=development webpack",
     "build": "NODE_ENV=production webpack",
-    "watch": "webpack --watch --progress --colors --display-modules"
+    "build-publish": "NODE_ENV=production webpack --config=webpack.dist.js",
+    "watch": "webpack --watch --progress --colors --display-modules",
+    "prepublishOnly": "yarn build-publish"
   },
   "dependencies": {
     "@material/button": "^0.37.0",
@@ -19,5 +21,14 @@
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
-  }
+  },
+  "name": "material-imba",
+  "version": "1.0.0",
+  "description": "material design components in imba",
+  "main": "dist/material-imba.js",
+  "module": "dist/material-imba.js",
+  "repository": "git@github.com:nathanjohnson320/material-design-imba.git",
+  "author": "Nathan Johnson <nathanjohnson320@gmail.com>",
+  "license": "MIT",
+  "private": false
 }
