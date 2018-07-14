@@ -1,6 +1,6 @@
 import {Button} from './button/button'
 # import {Icon, Sizes} from './icon/icon'
-# import {Grid, Row, Column} from './grid/grid'
+import {Grid, Row, Column} from './grid/grid'
 import {Drawer, ToolbarSpacer} from './drawer/drawer'
 import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {Icon, Sizes} from './icon/icon'
@@ -57,9 +57,14 @@ tag App
 	def render
 		<self>
 			<MyAppBar>
-			<MyDrawer open=data:menuOpen>
+			<div>
+				<MyDrawer open=data:menuOpen>
 			<div .main-content>
-				<MyCard outlined=false>
+				<Grid>
+					<Row>
+						for x in [1,2,3]
+							<Column width=4>
+								<MyCard width="100%">
 
 
 
