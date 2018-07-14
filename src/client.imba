@@ -1,9 +1,10 @@
 # import {Button} from './button/button'
 # import {Icon, Sizes} from './icon/icon'
 # import {Grid, Row, Column} from './grid/grid'
-import {Drawer} from './drawer/drawer'
+import {Drawer, ToolbarSpacer} from './drawer/drawer'
 import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {Icon, Sizes} from './icon/icon'
+import {List, ListItem, Divider} from './list/list'
 var store = {
 	menuOpen: false
 }
@@ -29,6 +30,13 @@ tag MyDrawer < Drawer
 	def body
 		<@body>
 			<MyAppBar title="The Title">
+			<ToolbarSpacer>
+			<List>
+				<ListItem> "Sup"
+				<ListItem> "Hello"
+				<Divider>
+				<ListItem> "Sup"
+				<ListItem> "Hello"
 
 tag App
 	def toggle

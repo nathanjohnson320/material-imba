@@ -1,8 +1,9 @@
 import {Button} from './button/button'
 import {Icon, Sizes as IconSizes} from './icon/icon'
 import {Grid,Column,Row} from './grid/grid'
-import {Drawer} from './drawer/drawer'
+import {Drawer, ToolbarSpacer} from './drawer/drawer'
 import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
+import {List, ListItem, Divider} from './list/list'
 
 export {
   Button,
@@ -10,8 +11,12 @@ export {
   Column,
   Row,
   Drawer,
+  ToolbarSpacer,
   TopAppBar,
   AppBarTitle,
   Icon,
   IconSizes,
+  List,
+  ListItem,
+  Divider,
 }

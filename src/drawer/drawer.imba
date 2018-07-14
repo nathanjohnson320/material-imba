@@ -1,6 +1,10 @@
 import {MDCTemporaryDrawer} from '@material/drawer'
 import '@material/drawer/mdc-drawer.scss'
 
+export tag ToolbarSpacer < div
+  def render
+    <self .mdc-drawer__toolbar-spacer>
+
 export tag Drawer < aside
   prop open
 
@@ -26,5 +30,5 @@ export tag Drawer < aside
           <header .mdc-drawer__header>
             <div .mdc-drawer__header-content>
               header
-        <nav .mdc-drawer__content.mdc-list>
+        <nav .mdc-drawer__content>
           body
