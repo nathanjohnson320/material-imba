@@ -1,21 +1,43 @@
-import {Button} from './button/button'
+# import {Button} from './button/button'
+# import {Icon, Sizes} from './icon/icon'
+# import {Grid, Row, Column} from './grid/grid'
+import {Drawer} from './drawer/drawer'
+import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {Icon, Sizes} from './icon/icon'
-import {Grid, Row, Column} from './grid/grid'
-var store = {}
+var store = {
+	menuOpen: false
+}
+
+tag MyAppBar < TopAppBar
+	def menu
+		<@menu css:display="flex">
+			<Icon icon="menu" color="white">
+			<AppBarTitle> "Material Imba"
+
+	def actions
+		<@actions>
+			<div> ""
+
+tag MyDrawer < Drawer
+	def ondrawerstate e
+		store:menuOpen = e.data:open
+
+	# def header
+	# 	<@header>
+	# 		<div> "I AM THE HEADER THING"
+
+	def body
+		<@body>
+			<MyAppBar title="The Title">
 
 tag App
+	def toggle
+		data:menuOpen = !data:menuOpen
+
 	def render
 		<self>
-			<Button ripple=true> "Yo dawg"
-			<Grid>
-				<Row>
-					<Column width=4> "1"
-					<Column width=2> "2"
-					<Column width=2> "3"
-				<Row>
-					<Column width=12>
-						<div css:textAlign="center">
-							"Yay full row"
+			<button :click="toggle"> "Toggle"
+			<MyDrawer open=data:menuOpen>
 
 
 Imba.mount <App[store]>
