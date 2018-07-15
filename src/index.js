@@ -10,6 +10,8 @@ import {Checkbox} from './checkbox/checkbox'
 import {Chips, Chip} from './chip/chip'
 import {Dialog, DialogActionButton} from './dialog/dialog'
 import {Fab} from './fab/fab'
+import {IconButton} from './icon-button/icon-button'
+import {ImageList} from './image-list/image-list'
 
 export {
   Button,
@@ -35,4 +37,6 @@ export {
   Dialog,
   DialogActionButton,
   Fab,
+  IconButton,
+  ImageList,
 }

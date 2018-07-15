@@ -12,6 +12,7 @@ import {Chips} from './chip/chip'
 import {Dialog, DialogActionButton} from './dialog/dialog'
 import {Fab} from './fab/fab'
 import {IconButton} from './icon-button/icon-button'
+import {ImageList} from './image-list/image-list'
 
 var store = {
 	menuOpen: false
@@ -104,6 +105,21 @@ tag MyDialog < Dialog
 			<DialogActionButton accept=true> "Accept"
 
 tag App
+	def build
+		@images = [
+			{
+				src: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/16.jpg"
+				label: "Lamp?"
+			},
+			{
+				src: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/4.jpg"
+				label: "Building?"
+			},
+			{
+				src: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/1.jpg"
+				label: "Building2?"
+			}
+		]
 	def openDialog
 		data:dialog:open = true
 
@@ -130,5 +146,8 @@ tag App
 						<Column width=12>
 							<Fab ripple=true extended=true> "Hay"
 							<IconButton[data:iconbutton] toggle=true onicon="favorite" officon="menu" ripple=true>
+					<Row>
+						<Column width=12>
+							<ImageList items=@images>
 
 Imba.mount <App[store]>
