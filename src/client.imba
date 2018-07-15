@@ -49,8 +49,7 @@ tag MyCard < Card
 
 	def body
 		<@body>
-			<Textfield disabled=false label="My input {x}">
-			<Textarea disabled=false label="My input {x}">
+			<Textfield outline=true label="My input {x}">
 
 	def actions
 		<@actions>
