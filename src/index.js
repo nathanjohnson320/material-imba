@@ -9,6 +9,7 @@ import {Textarea, Textfield, Notched} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
 import {Chips, Chip} from './chip/chip'
 import {Dialog, DialogActionButton} from './dialog/dialog'
+import {Fab} from './fab/fab'
 
 export {
   Button,
@@ -33,4 +34,5 @@ export {
   Chip,
   Dialog,
   DialogActionButton,
+  Fab,
 }

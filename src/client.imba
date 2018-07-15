@@ -10,6 +10,7 @@ import {Textfield, Textarea} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
 import {Chips} from './chip/chip'
 import {Dialog, DialogActionButton} from './dialog/dialog'
+import {Fab} from './fab/fab'
 
 var store = {
 	menuOpen: false
@@ -121,5 +122,8 @@ tag App
 							<MyDialog[data:dialog] scrollable=false>
 							<Button :click="openDialog"> "Open Dialog"
 							<div> "Dialog Accepted {data:dialog:accepted}"
+					<Row>
+						<Column width=12>
+							<Fab ripple=true extended=true> "Hay"
 
 Imba.mount <App[store]>
