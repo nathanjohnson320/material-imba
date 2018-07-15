@@ -6,6 +6,7 @@ import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {Icon, Sizes} from './icon/icon'
 import {List, ListItem, Divider} from './list/list'
 import {Card} from './card/card'
+import {Textfield, Textarea} from './textfield/textfield'
 
 var store = {
 	menuOpen: false
@@ -44,9 +45,11 @@ tag MyDrawer < Drawer
 				<ListItem> "Hello"
 
 tag MyCard < Card
+	prop x
+
 	def body
 		<@body>
-			"Important content goes here"
+			<Textfield outline=true label="My input {x}">
 
 	def actions
 		<@actions>
@@ -64,7 +67,7 @@ tag App
 					<Row>
 						for x in [1,2,3]
 							<Column width=4>
-								<MyCard width="100%">
+								<MyCard width="100%" x=x>
 
 
 
