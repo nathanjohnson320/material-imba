@@ -9,7 +9,9 @@ export tag Textfield
   prop fullwidth
   prop outline
   prop notched
+  prop boxed
   prop value
+  prop disabled
 
   def build
     @value = ""
@@ -24,8 +26,15 @@ export tag Textfield
   def render
     <self.mdc-text-field
       .mdc-text-field--fullwidth=@fullwidth
+      .mdc-text-field--box=@boxed
+      .mdc-text-field--disabled=@disabled
     >
-      <input.mdc-text-field__input type="text" :input="handleinput" value=@value>
+      <input.mdc-text-field__input
+        type="text"
+        :input="handleinput"
+        value=@value
+        disabled=@disabled
+      >
       if !@fullwidth
         <label
           .mdc-floating-label
@@ -53,6 +62,9 @@ export tag Textarea
   prop cols
   prop label
   prop value
+  prop fullwidth
+  prop boxed
+  prop disabled
 
   def build
     @rows = 2
@@ -67,6 +79,11 @@ export tag Textarea
     @value = e.target.value
 
   def render
-    <self.mdc-text-field.mdc-text-field--textarea>
-      <textarea .mdc-text-field__input rows=rows cols=cols :input="handleinput" value=@value>
-      <label .mdc-floating-label> @label
+    <self.mdc-text-field.mdc-text-field--textarea
+      .mdc-text-field--fullwidth=@fullwidth
+      .mdc-text-field--box=@boxed
+      .mdc-text-field--disabled=@disabled
+    >
+      <textarea .mdc-text-field__input rows=rows cols=cols :input="handleinput" value=@value disabled=@disabled>
+      if !@fullwidth
+        <label .mdc-floating-label> @label
