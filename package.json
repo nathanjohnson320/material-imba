@@ -27,6 +27,7 @@
     "@material/drawer": "^0.36.1",
     "@material/fab": "^0.37.0",
     "@material/form-field": "^0.37.0",
+    "@material/icon-button": "^0.37.0",
     "@material/layout-grid": "^0.34.0",
     "@material/list": "^0.37.0",
     "@material/notched-outline": "^0.35.0",

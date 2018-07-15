@@ -11,12 +11,16 @@ import {Checkbox} from './checkbox/checkbox'
 import {Chips} from './chip/chip'
 import {Dialog, DialogActionButton} from './dialog/dialog'
 import {Fab} from './fab/fab'
+import {IconButton} from './icon-button/icon-button'
 
 var store = {
 	menuOpen: false
 	dialog: {
 		open: false
 		accepted : false
+	}
+	iconbutton: {
+		toggled: false
 	}
 }
 
@@ -125,5 +129,6 @@ tag App
 					<Row>
 						<Column width=12>
 							<Fab ripple=true extended=true> "Hay"
+							<IconButton[data:iconbutton] toggle=true onicon="favorite" officon="menu" ripple=true>
 
 Imba.mount <App[store]>
