@@ -5,6 +5,8 @@ import {Drawer, ToolbarSpacer} from './drawer/drawer'
 import {TopAppBar, AppBarTitle} from './top-app-bar/top-app-bar'
 import {List, ListItem, Divider} from './list/list'
 import {Card} from './card/card'
+import {Textarea, Textfield, Notched} from './textfield/textfield'
+import {Checkbox} from './checkbox/checkbox'
 
 export {
   Button,
@@ -21,4 +23,8 @@ export {
   ListItem,
   Divider,
   Card,
+  Textarea,
+  Textfield,
+  Notched,
+  Checkbox,
 }

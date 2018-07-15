@@ -48,7 +48,6 @@ export tag Textfield
 
 export tag Notched
   def mount
-    console.log "MOUNTY"
     MDCNotchedOutline.new @dom:children[0]
     Imba.commit
 

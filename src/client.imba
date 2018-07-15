@@ -7,6 +7,7 @@ import {Icon, Sizes} from './icon/icon'
 import {List, ListItem, Divider} from './list/list'
 import {Card} from './card/card'
 import {Textfield, Textarea} from './textfield/textfield'
+import {Checkbox} from './checkbox/checkbox'
 
 var store = {
 	menuOpen: false
@@ -50,6 +51,7 @@ tag MyCard < Card
 	def body
 		<@body>
 			<Textfield outline=true label="My input {x}">
+			<Checkbox label="Checkin">
 
 	def actions
 		<@actions>
