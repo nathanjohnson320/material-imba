@@ -31,7 +31,7 @@ const config = {
 		extensions: [".imba",".js", ".json"]
 	},
 	entry: "./src/client.imba",
-	output: {  path: __dirname + '/dist', filename: "client.js" }
+	output: {  path: __dirname + '/docs', filename: "client.js" }
 };
 
 if (process.env.NODE_ENV === 'production') {
