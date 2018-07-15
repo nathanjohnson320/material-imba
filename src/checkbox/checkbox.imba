@@ -4,13 +4,14 @@ import "@material/checkbox/mdc-checkbox.scss"
 export tag Checkbox
   prop label
   prop checked
+  prop disabled
 
   def render
     <self .mdc-form-field>
       <div .mdc-checkbox>
         <input type="checkbox"
+          [checked]
           .mdc-checkbox__native-control
-          checked=@checked
         >
         <div .mdc-checkbox__background>
           <svg:svg .mdc-checkbox__checkmark
