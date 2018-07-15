@@ -8,6 +8,7 @@ import {Card} from './card/card'
 import {Textarea, Textfield, Notched} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
 import {Chips, Chip} from './chip/chip'
+import {Dialog, DialogActionButton} from './dialog/dialog'
 
 export {
   Button,
@@ -30,4 +31,6 @@ export {
   Checkbox,
   Chips,
   Chip,
+  Dialog,
+  DialogActionButton,
 }

@@ -9,9 +9,14 @@ import {Card} from './card/card'
 import {Textfield, Textarea} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
 import {Chips} from './chip/chip'
+import {Dialog, DialogActionButton} from './dialog/dialog'
 
 var store = {
 	menuOpen: false
+	dialog: {
+		open: false
+		accepted : false
+	}
 }
 
 tag MyAppBar < TopAppBar
@@ -79,7 +84,27 @@ tag MyCard < Card
 			<Button ripple=true> "Action 1"
 			<Button ripple=true> "Action 2"
 
+tag MyDialog < Dialog
+	def header
+		<@header>
+			"Title goes here"
+
+	def body
+		<@body>
+			"Some inner body dialog content"
+
+	def footer
+		<@footer>
+			<DialogActionButton cancel=true> "Cancel"
+			<DialogActionButton accept=true> "Accept"
+
 tag App
+	def openDialog
+		data:dialog:open = true
+
+	def ondialogstate e
+		data:dialog:accepted = e.data:accepted
+
 	def render
 		<self>
 			<MyAppBar>
@@ -91,7 +116,10 @@ tag App
 						for x in [1,2,3]
 							<Column width=4>
 								<MyCard width="100%" x=x>
-
-
+					<Row>
+						<Column width=12>
+							<MyDialog[data:dialog] scrollable=false>
+							<Button :click="openDialog"> "Open Dialog"
+							<div> "Dialog Accepted {data:dialog:accepted}"
 
 Imba.mount <App[store]>
