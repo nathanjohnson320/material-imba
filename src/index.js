@@ -7,6 +7,7 @@ import {List, ListItem, Divider} from './list/list'
 import {Card} from './card/card'
 import {Textarea, Textfield, Notched} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
+import {Chips, Chip} from './chip/chip'
 
 export {
   Button,
@@ -27,4 +28,6 @@ export {
   Textfield,
   Notched,
   Checkbox,
+  Chips,
+  Chip,
 }

@@ -8,6 +8,7 @@ import {List, ListItem, Divider} from './list/list'
 import {Card} from './card/card'
 import {Textfield, Textarea} from './textfield/textfield'
 import {Checkbox} from './checkbox/checkbox'
+import {Chips} from './chip/chip'
 
 var store = {
 	menuOpen: false
@@ -48,10 +49,30 @@ tag MyDrawer < Drawer
 tag MyCard < Card
 	prop x
 
+	def build
+		@chips = [
+			{
+				text: "One"
+				icon: "favorite"
+				leading: true
+			},
+			{
+				text: "Two"
+				icon: "movie"
+				trailing: true
+			},
+			{
+				text: "Three"
+				icon: "menu"
+				leading: true
+			}
+		]
+
 	def body
 		<@body>
 			<Textfield outline=true label="My input {x}">
 			<Checkbox label="Checkin">
+			<Chips items=@chips>
 
 	def actions
 		<@actions>

@@ -4,7 +4,7 @@ import './index.css';
 
 export var Sizes = sizes
 
-export tag Icon
+export tag Icon < i
   prop icon
   prop size
   prop invert
@@ -12,21 +12,30 @@ export tag Icon
   prop color
   prop inbutton
 
+  # Chip specific props
+  prop chip
+  prop trailing
+  prop leading
+
   def render
     @color ?= ''
     var sizeMapped = @size || sizes:small
     var defaultColor = @invert ? light : dark
     var inactiveColor = @inactive ? mdInactive : '';
 
-    <self>
-      <i
-        .material-icons
-        .{sizeMapped}
-        .{defaultColor}
-        .{inactiveColor}
-        .mdc-button__icon=@inbutton
-        css:color=@color
-        css:fontSize=sizeMapped
-      > @icon
+    <self
+      .material-icons
+      .{sizeMapped}
+      .{defaultColor}
+      .{inactiveColor}
+      .mdc-button__icon=@inbutton
+
+      .mdc-chip__icon=@chip
+      .mdc-chip__icon--leading=@leading
+      .mdc-chip__icon--trailing=@trailing
+
+      css:color=@color
+      css:fontSize=sizeMapped
+    > @icon
 
 
