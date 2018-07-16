@@ -142,7 +142,6 @@ tag App
 					<DocsDrawer[data] open=data:menuOpen>
 
 				<div .main-content>
-					<LinearProgress open=true progress=0.5 buffer=0.75>
 					<Components[data:components] route="/material-imba/">
 
 Imba.mount <App[store]>
