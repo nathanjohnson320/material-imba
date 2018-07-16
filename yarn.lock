@@ -2074,7 +2074,13 @@ ignore-walk@^3.0.1:
   dependencies:
     minimatch "^3.0.4"
 
-imba@^1.3.3:
+imba-router@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/imba-router/-/imba-router-0.2.0.tgz#28c066d9e4c3a119533479491a6b0f66c89519a9"
+  dependencies:
+    imba "1.x"
+
+imba@1.x, imba@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/imba/-/imba-1.3.3.tgz#62156d5c679810c47dce56538dbfc1d3e408cf94"
 

@@ -7,6 +7,7 @@ export tag IconButton < button
   prop officon
   prop toggle
   prop ripple
+  prop color
 
   def mount
     if @ripple
@@ -27,4 +28,4 @@ export tag IconButton < button
     <self .mdc-icon-button
       :click="toggle"
     >
-      <Icon icon=icon invert=inverted>
+      <Icon icon=icon invert=inverted color=@color>

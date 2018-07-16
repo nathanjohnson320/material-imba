@@ -30,7 +30,7 @@ const config = {
 	resolve: {
 		extensions: [".imba",".js", ".json"]
 	},
-	entry: "./src/client.imba",
+	entry: "./docs/src/client.imba",
 	output: {  path: __dirname + '/docs', filename: "client.js" }
 };
 

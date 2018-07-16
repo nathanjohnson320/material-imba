@@ -3,6 +3,16 @@ body {
 }
 
 .main-content {
-  padding-top: 64px;
+  padding: 72px 8px 8px 8px;
   height: calc(100vh - 64px);
+}
+
+.mdc-card__action-buttons {
+  width: 100%;
+}
+
+.component-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
