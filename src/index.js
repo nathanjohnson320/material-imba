@@ -12,6 +12,7 @@ import {Dialog, DialogActionButton} from './dialog/dialog'
 import {Fab} from './fab/fab'
 import {IconButton} from './icon-button/icon-button'
 import {ImageList} from './image-list/image-list'
+import {LinearProgress} from './linear-progress/linear-progress'
 
 export {
   Button,
@@ -39,4 +40,5 @@ export {
   Fab,
   IconButton,
   ImageList,
+  LinearProgress,
 }

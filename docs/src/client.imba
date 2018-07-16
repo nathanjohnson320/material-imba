@@ -72,6 +72,12 @@ var store = {
 			mdclink: "https://material.io/go/design-image-list"
 		},
 		{
+			name: "LinearProgress"
+			description: "Progress indicators express an unspecified wait time or display the length of a process."
+			link: "/linear-progress"
+			mdclink: "https://material.io/design/components/progress-indicators.html"
+		},
+		{
 			name: "List"
 			description: "Lists are continuous, vertical indexes of text or images."
 			link: "/list"
@@ -123,10 +129,9 @@ tag DocsDrawer < Drawer
 				<ListItem>
 					<a route-to='/material-imba/'> 'Components'
 				<Divider>
-				<ListItem>
-					<a route-to='/home'> 'Home'
-				<ListItem> "Sup"
-				<ListItem> "Hello"
+				for component in data:components
+					<ListItem>
+						<a route-to=component:link> component:name
 
 tag App
 	def render
@@ -134,9 +139,10 @@ tag App
 			<Typography>
 				<DocsAppBar>
 				<div>
-					<DocsDrawer open=data:menuOpen>
+					<DocsDrawer[data] open=data:menuOpen>
 
 				<div .main-content>
+					<LinearProgress open=true progress=0.5 buffer=0.75>
 					<Components[data:components] route="/material-imba/">
 
 Imba.mount <App[store]>
