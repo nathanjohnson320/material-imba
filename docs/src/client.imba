@@ -121,7 +121,7 @@ tag DocsDrawer < Drawer
 			<ToolbarSpacer>
 			<List>
 				<ListItem>
-					<a route-to='/'> 'Components'
+					<a route-to='/material-imba/'> 'Components'
 				<Divider>
 				<ListItem>
 					<a route-to='/home'> 'Home'
@@ -137,6 +137,6 @@ tag App
 					<DocsDrawer open=data:menuOpen>
 
 				<div .main-content>
-					<Components[data:components] route="/">
+					<Components[data:components] route="/material-imba/">
 
 Imba.mount <App[store]>

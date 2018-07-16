@@ -19,5 +19,5 @@ tag ComponentCard < Card
   def actions
     <@actions css:width="100%">
       <div .component-actions>
-        <a route-to=data:link> "MI Docs"
+        <a route-to="/material-imba/{data:link}"> "MI Docs"
         <a href=data:mdclink target="_blank"> "MDC Docs"
