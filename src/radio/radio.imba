@@ -2,8 +2,6 @@ import {FormField} from "../form-field/form-field"
 import {MDCRadio} from "@material/radio"
 import "@material/radio/mdc-radio.scss"
 
-
-
 export tag RadioGroup
   prop name
   prop items

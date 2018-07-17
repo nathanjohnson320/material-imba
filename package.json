@@ -38,6 +38,7 @@
     "@material/radio": "^0.37.1",
     "@material/ripple": "^0.37.0",
     "@material/select": "^0.37.1",
+    "@material/slider": "^0.36.0",
     "@material/textfield": "^0.37.0",
     "@material/top-app-bar": "^0.37.0",
     "@material/typography": "^0.35.0",

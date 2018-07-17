@@ -96,6 +96,12 @@ export var componentlist = [
     mdclink: "https://material.io/design/components/text-fields.html"
   },
   {
+    name: "Slider"
+    description: "Sliders allow users to make selections from a range of values."
+    link: "/slider"
+    mdclink: "https://material.io/design/components/sliders.html"
+  },
+  {
     name: "Textfield"
     description: "Text fields allow users to input, edit, and select text."
     link: "/textfield"
