@@ -52,7 +52,6 @@ export {
   Menu,
   MenuAnchor,
   Corners,
-  Notched,
   Radio,
   RadioGroup,
   Select,
