@@ -275,6 +275,17 @@
     "@material/rtl" "^0.36.0"
     "@material/theme" "^0.35.0"
 
+"@material/tabs@^0.37.1":
+  version "0.37.1"
+  resolved "https://registry.yarnpkg.com/@material/tabs/-/tabs-0.37.1.tgz#421b282e0da7b9417f71f3f9f31be63282326692"
+  dependencies:
+    "@material/animation" "^0.34.0"
+    "@material/base" "^0.35.0"
+    "@material/ripple" "^0.37.1"
+    "@material/rtl" "^0.36.0"
+    "@material/theme" "^0.35.0"
+    "@material/typography" "^0.37.1"
+
 "@material/textfield@^0.37.0":
   version "0.37.0"
   resolved "https://registry.yarnpkg.com/@material/textfield/-/textfield-0.37.0.tgz#8288d379f81c3f6f09fde384792afd219bfe116c"
