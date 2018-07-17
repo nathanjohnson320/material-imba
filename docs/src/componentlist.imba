@@ -102,6 +102,12 @@ export var componentlist = [
     mdclink: "https://material.io/design/components/sliders.html"
   },
   {
+    name: "Snackbar"
+    description: "Snackbars provide brief messages about app processes at the bottom of the screen."
+    link: "/snackbar"
+    mdclink: "https://material.io/design/components/snackbars.html"
+  },
+  {
     name: "Textfield"
     description: "Text fields allow users to input, edit, and select text."
     link: "/textfield"
