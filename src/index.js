@@ -21,6 +21,7 @@ import {Slider} from './slider/slider'
 import {Snackbar} from './snackbar/snackbar'
 import {Switch} from './switch/switch'
 import {Typography, Headline, Subtitle, TypographyBody, TypographyCaption, TypographyButton, TypographyOverline} from './typography/typography'
+import {Tabs} from './tabs/tabs'
 
 export {
   Button,
@@ -64,5 +65,6 @@ export {
   TypographyBody,
   TypographyCaption,
   TypographyButton,
-  TypographyOverline
+  TypographyOverline,
+  Tabs
 }
