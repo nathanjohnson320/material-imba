@@ -1,7 +1,6 @@
 import {MDCTextField} from "@material/textfield"
-import {MDCNotchedOutline} from '@material/notched-outline'
 import "@material/textfield/mdc-text-field.scss"
-import "@material/notched-outline/mdc-notched-outline.scss"
+import {Notched} from "../notched-outline/notched-outline"
 
 export tag Textfield
   prop label
@@ -45,18 +44,6 @@ export tag Textfield
 
       if !@outline
         <div .mdc-line-ripple>
-
-export tag Notched
-  def mount
-    MDCNotchedOutline.new @dom:children[0]
-    Imba.commit
-
-  def render
-    <self>
-      <div .mdc-notched-outline>
-        <svg:svg>
-          <svg:path .mdc-notched-outline__path>
-      <div .mdc-notched-outline__idle>
 
 export tag Textarea
   prop rows
