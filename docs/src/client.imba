@@ -5,7 +5,6 @@ import {IconButton} from '../../src/icon-button/icon-button'
 import {ToolbarSpacer, Drawer} from '../../src/drawer/drawer'
 import {List, ListItem, Divider} from '../../src/list/list'
 import {Typography} from '../../src/typography/typography'
-
 import {Components} from './components'
 
 var store = {
@@ -48,6 +47,12 @@ var store = {
 			mdclink: "https://material.io/go/design-fab"
 		},
 		{
+			name: "FormField"
+			description: "MDC Form Field aligns an MDC Web form field (for example, a checkbox) with its label and makes it RTL-aware."
+			link: "/form-field"
+			mdclink: "https://material-components.github.io/material-components-web-catalog/#/component/radio"
+		},
+		{
 			name: "Grid"
 			description: "Material design’s responsive UI is based on a column-variate grid layout. It has 12 columns on desktop, 8 columns on tablet and 4 columns on phone."
 			link: "/grid"
@@ -82,6 +87,18 @@ var store = {
 			description: "Lists are continuous, vertical indexes of text or images."
 			link: "/list"
 			mdclink: "https://material.io/design/components/lists.html"
+		},
+		{
+			name: "Menu"
+			description: "Menus display a list of choices on temporary surfaces."
+			link: "/menu"
+			mdclink: "https://material.io/design/components/menus.html"
+		},
+		{
+			name: "Radio"
+			description: "Radio buttons allow the user to select one option from a set."
+			link: "/radio"
+			mdclink: "https://material.io/design/components/selection-controls.html#radio-buttons"
 		},
 		{
 			name: "Textfield"

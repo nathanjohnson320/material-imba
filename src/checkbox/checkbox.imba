@@ -1,4 +1,4 @@
-import "@material/form-field/mdc-form-field.scss"
+import {FormField} from "../form-field/form-field"
 import "@material/checkbox/mdc-checkbox.scss"
 
 export tag Checkbox
@@ -7,19 +7,20 @@ export tag Checkbox
   prop disabled
 
   def render
-    <self .mdc-form-field>
-      <div .mdc-checkbox>
-        <input type="checkbox"
-          [checked]
-          .mdc-checkbox__native-control
-        >
-        <div .mdc-checkbox__background>
-          <svg:svg .mdc-checkbox__checkmark
-            viewBox="0 0 24 24"
+    <self>
+      <FormField>
+        <div .mdc-checkbox>
+          <input type="checkbox"
+            [checked]
+            .mdc-checkbox__native-control
           >
-            <svg:path .mdc-checkbox__checkmark-path
-              fill="none"
-              d="M1.73,12.91 8.1,19.28 22.79,4.59"
+          <div .mdc-checkbox__background>
+            <svg:svg .mdc-checkbox__checkmark
+              viewBox="0 0 24 24"
             >
-          <div .mdc-checkbox__mixedmark>
-      <label> @label
+              <svg:path .mdc-checkbox__checkmark-path
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"
+              >
+            <div .mdc-checkbox__mixedmark>
+        <label> @label
