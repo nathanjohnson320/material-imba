@@ -108,6 +108,12 @@ export var componentlist = [
     mdclink: "https://material.io/design/components/snackbars.html"
   },
   {
+    name: "Switch"
+    description: "Switches toggle the state of a single setting on or off."
+    link: "/switch"
+    mdclink: "https://material.io/design/components/selection-controls.html#switches"
+  },
+  {
     name: "Textfield"
     description: "Text fields allow users to input, edit, and select text."
     link: "/textfield"

@@ -40,6 +40,7 @@
     "@material/select": "^0.37.1",
     "@material/slider": "^0.36.0",
     "@material/snackbar": "^0.37.1",
+    "@material/switch": "^0.36.1",
     "@material/textfield": "^0.37.0",
     "@material/top-app-bar": "^0.37.0",
     "@material/typography": "^0.35.0",
