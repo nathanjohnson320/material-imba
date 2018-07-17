@@ -114,6 +114,12 @@ export var componentlist = [
     mdclink: "https://material.io/design/components/selection-controls.html#switches"
   },
   {
+    name: "Tabs"
+    description: "Tabs organize content across different screens, data sets, and other interactions."
+    link: "/tabs"
+    mdclink: "https://material.io/go/design-tabs"
+  },
+  {
     name: "Textfield"
     description: "Text fields allow users to input, edit, and select text."
     link: "/textfield"
