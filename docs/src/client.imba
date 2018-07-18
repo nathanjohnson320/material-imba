@@ -29,6 +29,46 @@ var store = {
 			toggled: false
 		}
 	}
+	chip: {
+		chip1: {
+			items1: [
+				{
+					text: "A"
+				}
+				{
+					text: "B"
+				}
+			]
+			items2: [
+				{
+					text: "A"
+					leading: true
+					icon: "favorite"
+				}
+				{
+					text: "B"
+					leading: true
+					icon: "menu"
+				}
+			]
+			items3: [
+				{
+					text: "A"
+					trailing: true
+					icon: "favorite"
+				}
+				{
+					text: "B"
+					trailing: true
+					icon: "menu"
+				}
+			]
+			selected: null
+		}
+		chip2: {
+			selected: []
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

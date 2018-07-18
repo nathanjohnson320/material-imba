@@ -35,7 +35,8 @@ export tag Chips
 
   def build
     @items = []
-    @selected = []
+    if !data
+      data = { selected: [] }
 
   def mount
     @chipset = MDCChipSet.new @dom
@@ -43,18 +44,21 @@ export tag Chips
 
   def select index
     if @choice
-      # Choice only has one at a time
-      @selected = @items[index]
-    if @filter
+      # Choice only has one at a time, if you select
+      # the same one it gets unselected
+      if data:selected == @items[index]
+        data:selected = null
+      else
+        data:selected = @items[index]
+    if @filter && Array.isArray data:selected
       # Filter allows for multiple selection
       # So selected will be all the indexes that
       # have been selected
-      var i = @selected.indexOf index
+      var i = data:selected.indexOf index
       if i >= 0
-        @selected.splice i, 1
+        data:selected.splice i, 1
       else
-        @selected.push index
-      console.log @selected
+        data:selected.push index
 
     # Bubble up an event with the selected thing
     trigger('select', @items[index])
