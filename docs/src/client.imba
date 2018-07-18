@@ -18,6 +18,9 @@ var store = {
 	button: {
 		disabled: false
 	}
+	card: {
+		toggled: false
+	}
 }
 
 tag DocsAppBar < TopAppBar
