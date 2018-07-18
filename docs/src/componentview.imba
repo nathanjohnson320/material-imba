@@ -11,4 +11,4 @@ export tag ComponentView
       <ButtonPage[data:button] route="{base}/button">
       <CardPage[data:card] route="{base}/card">
       <CheckboxPage[data:checkbox] route="{base}/checkbox">
-      <ChipPage[data:chip] route="{base}/chip">
+      <ChipPage[data:chip] route="{base}/chips">
