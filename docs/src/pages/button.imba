@@ -18,7 +18,9 @@ var text = "
 <br>\n
 ###### text\n
 ```javascript\n
-<Button text=\"Hello, Material!\">\n
+<Button text=\"Hello, Material!\">\n\n
+OR \n\n
+<Button> \"Hello, Material!\"\n
 ```\n
 "
 
