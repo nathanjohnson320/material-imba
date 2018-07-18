@@ -6,13 +6,23 @@ export tag Checkbox
   prop checked
   prop disabled
 
+  def build
+    data = {}
+
+  def isDisabled
+    (data && data:disabled) || @disabled
+
   def render
     <self>
       <FormField>
-        <div .mdc-checkbox>
+        <div
+          .mdc-checkbox
+          .mdc-checkbox--disabled=isDisabled
+        >
           <input type="checkbox"
-            [checked]
+            [data:checked]
             .mdc-checkbox__native-control
+            disabled=isDisabled
           >
           <div .mdc-checkbox__background>
             <svg:svg .mdc-checkbox__checkmark

@@ -21,6 +21,14 @@ var store = {
 	card: {
 		toggled: false
 	}
+	checkbox: {
+		box1: {
+			disabled: false
+		}
+		box2: {
+			toggled: false
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

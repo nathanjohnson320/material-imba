@@ -82,8 +82,6 @@ var dm = "<br>\n
 ```\n
 "
 
-#   prop disabled
-
 export tag ButtonPage
   def render
     <self>
