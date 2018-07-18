@@ -1,16 +1,23 @@
 import 'imba-router'
 
+import 'github-markdown-css/github-markdown.css'
+
 import {AppBarTitle, TopAppBar} from '../../src/top-app-bar/top-app-bar'
 import {IconButton} from '../../src/icon-button/icon-button'
 import {ToolbarSpacer, Drawer} from '../../src/drawer/drawer'
 import {List, ListItem, Divider} from '../../src/list/list'
 import {Typography} from '../../src/typography/typography'
 import {Components} from './components'
+import {ComponentView} from './componentview'
+
 import {componentlist} from './componentlist'
 
 var store = {
 	menuOpen: false
 	components: componentlist
+	button: {
+		disabled: false
+	}
 }
 
 tag DocsAppBar < TopAppBar
@@ -40,7 +47,7 @@ tag DocsDrawer < Drawer
 				<Divider>
 				for component in data:components
 					<ListItem>
-						<a route-to=component:link> component:name
+						<a route-to="/material-imba{component:link}"> component:name
 
 tag App
 	def render
@@ -52,5 +59,6 @@ tag App
 
 				<div .main-content>
 					<Components[data:components] route="/material-imba/">
+					<ComponentView[data]>
 
 Imba.mount <App[store]>

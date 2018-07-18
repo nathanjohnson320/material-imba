@@ -16,3 +16,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.demo-block {
+  padding: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 1px 4px 0  hsla(0, 0%, 0%, 0.1), 0 0px 4px 0 hsla(0, 0%, 0%, 0.1);
+}
