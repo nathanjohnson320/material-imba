@@ -15,12 +15,12 @@ export tag IconButton < button
       iconButtonRipple:unbounded = true
 
   def toggle
-    if @toggle
+    if @toggle && data
       data:toggled = !data:toggled
 
   def render
     var icon = @onicon
-    var inverted = @toggle && !data:toggled
+    var inverted = @toggle && data && !data:toggled
     # If we're in toggle mode but toggle is false
     if inverted
       icon = @officon

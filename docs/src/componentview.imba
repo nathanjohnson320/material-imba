@@ -7,6 +7,7 @@ import {DrawerPage} from "./pages/drawer"
 import {FabPage} from "./pages/fab"
 import {GridPage} from "./pages/grid"
 import {IconPage} from "./pages/icon"
+import {IconButtonPage} from "./pages/iconbutton"
 
 var base = "/material-imba"
 
@@ -22,3 +23,4 @@ export tag ComponentView
       <FabPage[data:fab] route="{base}/fab">
       <GridPage route="{base}/grid">
       <IconPage route="{base}/icon">
+      <IconButtonPage[data:iconbutton] route="{base}/icon-button">

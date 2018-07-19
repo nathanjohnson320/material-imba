@@ -73,6 +73,9 @@ var store = {
 	}
 	fab: {
 	}
+	iconbutton: {
+		toggled: false
+	}
 }
 
 tag DocsAppBar < TopAppBar
