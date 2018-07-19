@@ -76,6 +76,20 @@ var store = {
 	iconbutton: {
 		toggled: false
 	}
+	linearprogress: {
+		bar1: {
+			open: false
+		}
+		bar2: {
+			open: true
+			progress: 0
+		}
+		bar3: {
+			open: true
+			progress: 0
+			buffer: 0.1
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

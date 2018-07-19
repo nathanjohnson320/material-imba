@@ -8,6 +8,7 @@ import {FabPage} from "./pages/fab"
 import {GridPage} from "./pages/grid"
 import {IconPage} from "./pages/icon"
 import {IconButtonPage} from "./pages/iconbutton"
+import {LinearProgressPage} from "./pages/linearprogress"
 
 var base = "/material-imba"
 
@@ -24,3 +25,4 @@ export tag ComponentView
       <GridPage route="{base}/grid">
       <IconPage route="{base}/icon">
       <IconButtonPage[data:iconbutton] route="{base}/icon-button">
+      <LinearProgressPage[data:linearprogress] route="{base}/linear-progress">

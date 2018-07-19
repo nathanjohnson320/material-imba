@@ -16,9 +16,18 @@ export tag LinearProgress
     if @progressbar && @progress
       @progressbar:progress = @progress
 
+    if @progressbar && data && data:progress >= 0
+      @progressbar:progress = data:progress
+
   def setbuffer
     if @progressbar && @buffer
       @progressbar:buffer = @buffer
+
+    if @progressbar && data && data:buffer >= 0
+      @progressbar:buffer = data:buffer
+
+  def isopen
+    @open || (data && data:open)
 
   def mount
     @progressbar = MDCLinearProgress.new @dom
@@ -30,7 +39,7 @@ export tag LinearProgress
     setbuffer
 
     <self.mdc-linear-progress role="progressbar"
-      .mdc-linear-progress--closed=!@open
+      .mdc-linear-progress--closed=!isopen
       .mdc-linear-progress--reversed=@reversed
       .mdc-linear-progress--indeterminate=@indeterminate
     >
