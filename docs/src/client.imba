@@ -71,6 +71,8 @@ var store = {
 	}
 	dialog: {
 	}
+	fab: {
+	}
 }
 
 tag DocsAppBar < TopAppBar

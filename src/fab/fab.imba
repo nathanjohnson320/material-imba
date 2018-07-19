@@ -1,11 +1,14 @@
 import {MDCRipple} from '@material/ripple';
 import "@material/fab/mdc-fab.scss"
+import {Icon} from "../icon/icon"
 
 export tag Fab < button
   prop ripple
   prop mini
   prop extended
   prop text
+  prop icon
+  prop iconColor
 
   def mount
     if @ripple
@@ -17,6 +20,7 @@ export tag Fab < button
       .mdc-fab--mini=@mini
       .mdc-fab--extended=@extended
     >
-      <span .mdc-fab__icon.material-icons> "favorite"
+      <span .mdc-fab__icon>
+        <Icon icon=@icon color=iconColor>
       if @extended
         <span .mdc-fab__label> @text

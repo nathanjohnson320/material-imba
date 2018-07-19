@@ -19,8 +19,13 @@ export tag Icon < i
 
   def render
     @color ?= ''
+    # Allow styling via css variables
+    var cssStyle = window.getComputedStyle(document:body).getPropertyValue('--mdc-theme-on-secondary')
+    var defaultColor
+    if !cssStyle
+      defaultColor = @invert ? light : dark
+
     var sizeMapped = @size || sizes:small
-    var defaultColor = @invert ? light : dark
     var inactiveColor = @inactive ? mdInactive : '';
 
     <self

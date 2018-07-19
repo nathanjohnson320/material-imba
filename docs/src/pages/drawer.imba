@@ -2,7 +2,7 @@ import {Markdown} from '../markdown'
 import {Drawer, ToolbarSpacer} from '../../../src/drawer/drawer'
 
 var block1 = '
-Dialog\n
+Drawer\n
 ===================\n
 
 ### Import\n

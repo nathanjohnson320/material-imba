@@ -1,9 +1,10 @@
-import {ButtonPage} from './pages/button'
-import {CardPage} from './pages/card'
-import {CheckboxPage} from './pages/checkbox'
-import {ChipPage} from './pages/chips'
-import {DialogPage} from './pages/dialog'
-import {DrawerPage} from './pages/drawer'
+import {ButtonPage} from "./pages/button"
+import {CardPage} from "./pages/card"
+import {CheckboxPage} from "./pages/checkbox"
+import {ChipPage} from "./pages/chips"
+import {DialogPage} from "./pages/dialog"
+import {DrawerPage} from "./pages/drawer"
+import {FabPage} from "./pages/fab"
 
 var base = "/material-imba"
 
@@ -16,3 +17,4 @@ export tag ComponentView
       <ChipPage[data:chip] route="{base}/chips">
       <DialogPage[data:dialog] route="{base}/dialog">
       <DrawerPage route="{base}/drawer">
+      <FabPage[data:fab] route="{base}/fab">
