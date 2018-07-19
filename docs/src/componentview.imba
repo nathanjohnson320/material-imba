@@ -5,6 +5,7 @@ import {ChipPage} from "./pages/chips"
 import {DialogPage} from "./pages/dialog"
 import {DrawerPage} from "./pages/drawer"
 import {FabPage} from "./pages/fab"
+import {GridPage} from "./pages/grid"
 
 var base = "/material-imba"
 
@@ -18,3 +19,4 @@ export tag ComponentView
       <DialogPage[data:dialog] route="{base}/dialog">
       <DrawerPage route="{base}/drawer">
       <FabPage[data:fab] route="{base}/fab">
+      <GridPage route="{base}/grid">
