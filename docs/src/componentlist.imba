@@ -42,12 +42,6 @@ export var componentlist = [
     mdclink: "https://material.io/go/design-fab"
   },
   {
-    name: "FormField"
-    description: "MDC Form Field aligns an MDC Web form field (for example, a checkbox) with its label and makes it RTL-aware."
-    link: "/form-field"
-    mdclink: "https://material-components.github.io/material-components-web-catalog/#/component/radio"
-  },
-  {
     name: "Grid"
     description: "Material design’s responsive UI is based on a column-variate grid layout. It has 12 columns on desktop, 8 columns on tablet and 4 columns on phone."
     link: "/grid"
