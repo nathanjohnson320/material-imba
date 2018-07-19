@@ -69,6 +69,8 @@ var store = {
 			selected: []
 		}
 	}
+	dialog: {
+	}
 }
 
 tag DocsAppBar < TopAppBar
