@@ -30,6 +30,12 @@ export var componentlist = [
     mdclink: "https://material.io/design/components/dialogs.html"
   },
   {
+    name: "Drawer"
+    description: "Navigation drawers provide access to destinations in your app."
+    link: "/drawer"
+    mdclink: "https://material.io/design/components/navigation-drawer.html"
+  },
+  {
     name: "Fab"
     description: "A floating action button represents the primary action in an application."
     link: "/fab"
