@@ -21,8 +21,9 @@ export tag Slider
     @slider:disabled = @disabled
 
     @dom.addEventListener "MDCSlider:change", do
-      data:value = @slider:value
-      Imba.commit
+      if data
+        data:value = @slider:value
+        Imba.commit
 
   def render
     <self.mdc-slider

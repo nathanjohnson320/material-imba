@@ -13,6 +13,7 @@ import {ListPage} from "./pages/list"
 import {MenuPage} from "./pages/menu"
 import {RadioPage} from "./pages/radio"
 import {SelectPage} from "./pages/select"
+import {SliderPage} from "./pages/slider"
 
 var base = "/material-imba"
 
@@ -34,3 +35,4 @@ export tag ComponentView
       <MenuPage[data:menu] route="{base}/menu">
       <RadioPage[data:radio] route="{base}/radio">
       <SelectPage[data:select] route="{base}/select">
+      <SliderPage[data:slider] route="{base}/slider">
