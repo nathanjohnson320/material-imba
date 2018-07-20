@@ -110,6 +110,15 @@ var store = {
 			checked: null
 		}
 	}
+	select: {
+		select1: {
+			options: [{value: "", text: "", disabled: true}, {value: "hello", text: "hello"}, {value: "hello2", text: "hello2"}]
+		}
+		select2: {
+			selected: null
+			selectedIndex: null
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

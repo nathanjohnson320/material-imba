@@ -12,6 +12,7 @@ import {LinearProgressPage} from "./pages/linearprogress"
 import {ListPage} from "./pages/list"
 import {MenuPage} from "./pages/menu"
 import {RadioPage} from "./pages/radio"
+import {SelectPage} from "./pages/select"
 
 var base = "/material-imba"
 
@@ -31,4 +32,5 @@ export tag ComponentView
       <LinearProgressPage[data:linearprogress] route="{base}/linear-progress">
       <ListPage route="{base}/list">
       <MenuPage[data:menu] route="{base}/menu">
-      <RadioPage[data:radio]>
+      <RadioPage[data:radio] route="{base}/radio">
+      <SelectPage[data:select] route="{base}/select">
