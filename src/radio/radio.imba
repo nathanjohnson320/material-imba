@@ -25,6 +25,8 @@ export tag Radio
 
   def build
     @id = generateid
+    if !data
+      data = { checked: false }
 
   def mount
     if @ripple
@@ -40,7 +42,7 @@ export tag Radio
             type="radio"
             name=@name
             id=@id
-            value=@value
+            value=(@value || (data && data:value))
           >
           <div .mdc-radio__background>
             <div .mdc-radio__outer-circle>

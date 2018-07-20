@@ -99,6 +99,17 @@ var store = {
 			selected: null
 		}
 	}
+	radio: {
+		radio1: {
+			checked: true
+		}
+		radiogroup: {
+			items: [{label: "item 1", value: 1}, {label: "item 2", value: 2}]
+		}
+		radiogroup1: {
+			checked: null
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

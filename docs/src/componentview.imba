@@ -11,6 +11,7 @@ import {IconButtonPage} from "./pages/iconbutton"
 import {LinearProgressPage} from "./pages/linearprogress"
 import {ListPage} from "./pages/list"
 import {MenuPage} from "./pages/menu"
+import {RadioPage} from "./pages/radio"
 
 var base = "/material-imba"
 
@@ -30,3 +31,4 @@ export tag ComponentView
       <LinearProgressPage[data:linearprogress] route="{base}/linear-progress">
       <ListPage route="{base}/list">
       <MenuPage[data:menu] route="{base}/menu">
+      <RadioPage[data:radio]>
