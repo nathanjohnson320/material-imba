@@ -90,6 +90,15 @@ var store = {
 			buffer: 0.1
 		}
 	}
+	menu: {
+		menu1: {
+			open: true
+		}
+		menu2: {
+			open: false
+			selected: null
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

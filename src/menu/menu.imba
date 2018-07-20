@@ -41,11 +41,23 @@ export tag Menu
 
       data:selected = detail:index
       data:open = false
+      @open = false
       Imba.commit
 
-  def render
-    if @menu
+    @dom.addEventListener 'MDCMenu:cancel', do |e|
+      if data
+        data:open = false
+      @open = false
+      Imba.commit
+
+  def isopen
+    if @menu && data
       @menu:open = data:open
+    else if @menu
+      @menu:open = @open
+
+  def render
+    isopen
 
     <self .mdc-menu tabindex="-1">
       <ul .mdc-menu__items.mdc-list role="menu">
