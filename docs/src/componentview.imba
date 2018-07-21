@@ -19,6 +19,7 @@ import {SwitchPage} from "./pages/switch"
 import {TabsPage} from "./pages/tabs"
 import {TextfieldPage} from "./pages/textfield"
 import {TopAppBarPage} from "./pages/top-app-bar"
+import {TypographyPage} from "./pages/typography"
 
 var base = "/material-imba"
 
@@ -46,3 +47,4 @@ export tag ComponentView
       <TabsPage[data:tabs] route="{base}/tabs">
       <TextfieldPage[data:textfield] route="{base}/textfield">
       <TopAppBarPage[data:topappbar] route="{base}/top-app-bar">
+      <TypographyPage route="{base}/typography">
