@@ -162,6 +162,15 @@ var store = {
 			toggled: false
 		}
 	}
+	tabs: {
+		tabs1: {
+			items: [{text: "one"}, {text: "two"}, {text: "three"}]
+			selectedItem: null
+		}
+		tabs2: {
+			selectedIndex: 0
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

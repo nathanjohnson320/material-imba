@@ -12,10 +12,11 @@ export tag Tabs < nav
 
     # Listen for tab selections
     @dom.addEventListener "MDCTabBar:change", do |e|
-      var index = e:detail:activeTabIndex
-      data:selectedIndex = index
-      data:selectedItem = @items[index]
-      Imba.commit
+      if data
+        var index = e:detail:activeTabIndex
+        data:selectedIndex = index
+        data:selectedItem = @items[index]:text
+        Imba.commit
 
     Imba.commit
 
