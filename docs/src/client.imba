@@ -171,6 +171,22 @@ var store = {
 			selectedIndex: 0
 		}
 	}
+	textfield: {
+		textfield1: {
+			value: ""
+		}
+		textfield2: {
+			value: ""
+			disabled: false
+		}
+		textarea: {
+			value: ""
+		}
+		textarea2: {
+			value: ""
+			disabled: false
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

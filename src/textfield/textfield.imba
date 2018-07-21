@@ -12,27 +12,29 @@ export tag Textfield
   prop disabled
 
   def build
+    if !data
+      data = {}
     @value = ""
 
   def mount
     MDCTextField.new @dom
     Imba.commit
 
-  def handleinput e
-    @value = e.target.value
+  def isdisabled
+    @disabled || (data && data:disabled)
 
   def render
     <self.mdc-text-field
       .mdc-text-field--fullwidth=@fullwidth
       .mdc-text-field--box=@boxed
-      .mdc-text-field--disabled=@disabled
+      .mdc-text-field--disabled=isdisabled
       .mdc-text-field--outlined=@outline
     >
       <input.mdc-text-field__input
+        [data:value]
         type="text"
-        :input="handleinput"
-        value=@value
-        disabled=@disabled
+        disabled=isdisabled
+        id=@id
       >
       if !@fullwidth
         <label
@@ -59,22 +61,24 @@ export tag Textarea
     @rows = 2
     @cols = 40
     @value = ""
+    if !data
+      data = {}
 
   def mount
     MDCTextField.new @dom
     Imba.commit
 
-  def handleinput e
-    @value = e.target.value
+  def isdisabled
+    @disabled || (data && data:disabled)
 
   def render
     <self.mdc-text-field.mdc-text-field--textarea
       .mdc-text-field--fullwidth=@fullwidth
       .mdc-text-field--box=@boxed
-      .mdc-text-field--disabled=@disabled
+      .mdc-text-field--disabled=isdisabled
       .mdc-text-field--outlined=@outline
     >
-      <textarea .mdc-text-field__input rows=rows cols=cols :input="handleinput" value=@value disabled=@disabled>
+      <textarea[data:value] .mdc-text-field__input rows=rows cols=cols disabled=isdisabled>
       if !@fullwidth
         <label .mdc-floating-label> @label
       if @outline

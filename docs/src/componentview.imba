@@ -17,6 +17,7 @@ import {SliderPage} from "./pages/slider"
 import {SnackbarPage} from "./pages/snackbar"
 import {SwitchPage} from "./pages/switch"
 import {TabsPage} from "./pages/tabs"
+import {TextfieldPage} from "./pages/textfield"
 
 var base = "/material-imba"
 
@@ -42,3 +43,4 @@ export tag ComponentView
       <SnackbarPage[data:snackbar] route="{base}/snackbar">
       <SwitchPage[data:switch] route="{base}/switch">
       <TabsPage[data:tabs] route="{base}/tabs">
+      <TextfieldPage[data:textfield] route="{base}/textfield">
