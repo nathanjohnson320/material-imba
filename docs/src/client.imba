@@ -133,6 +133,30 @@ var store = {
 		slider6: {
 		}
 	}
+	snackbar: {
+		snackbar1: {
+			show: false
+		}
+		snackbar2: {
+			show: false
+		}
+		snackbar3: {
+			show: false
+		}
+		snackbar4: {
+			show: false
+		}
+		snackbar5: {
+			show: false
+		}
+		snackbar6: {
+			show: false
+		}
+		snackbar7: {
+			show: false
+			clicked: false
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

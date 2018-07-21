@@ -13,15 +13,19 @@ export tag Snackbar
   def show
     # Show if we have a snackbar but not if we're already showing
     if @snackbar && !@showing
-      @snackbar.show {
-        message: @text
+      var showData = {
+        message: @text || " "
         timeout: @timeout
         multiline: @multiline
-        actionOnBottom: @actionOnBottom
-        actionText: @actionText
-        actionHandler: do
-          trigger('action')
       }
+
+      if @actionText
+        showData:actionOnBottom = @actionOnBottom
+        showData:actionText = @actionText
+        showData:actionHandler = do
+          trigger('action')
+
+      @snackbar.show showData
 
   def build
     @timeout = 2750
@@ -35,7 +39,7 @@ export tag Snackbar
     @dom.addEventListener "MDCSnackbar:hide", do
       @showing = false
       if data
-        data:show = @show
+        data:show = false
       Imba.commit
 
     Imba.commit

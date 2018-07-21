@@ -74,8 +74,6 @@ var disabled = '
 ```\n
 '
 
-#   prop trackmarks
-
 export tag SliderPage
   def render
     <self>
