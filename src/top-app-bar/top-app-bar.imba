@@ -1,20 +1,18 @@
 import {MDCTopAppBar} from '@material/top-app-bar/index'
 import "@material/top-app-bar/mdc-top-app-bar.scss"
 
-export tag AppBarTitle < span
+export tag AppBarTitle
   def render
     <self .mdc-top-app-bar__title> @text
 
 export tag TopAppBar < header
-  prop title
-
   def menu
     <@menu>
       <AppBarTitle> "Application Title"
 
   def actions
     <@actions>
-      <a .material-icons.mdc-top-app-bar__action-item href="#"> "X"
+      <a .material-icons.mdc-top-app-bar__action-item href="#"> ""
 
   def render
     <self .mdc-top-app-bar>

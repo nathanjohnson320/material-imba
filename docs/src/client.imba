@@ -187,6 +187,9 @@ var store = {
 			disabled: false
 		}
 	}
+	topappbar: {
+
+	}
 }
 
 tag DocsAppBar < TopAppBar
