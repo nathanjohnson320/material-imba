@@ -16,6 +16,7 @@ const config = {
 					},
 					{
 						loader: 'css-loader',
+						options: { minimize: true }
 					},
 					{
 						options: {
@@ -42,7 +43,19 @@ const config = {
 if (process.env.NODE_ENV === 'production') {
 	config.optimization = {
     minimizer: [
-			new UglifyJsPlugin(),
+			new UglifyJsPlugin({
+				uglifyOptions: {
+					compress: {
+						drop_console: true,
+						warnings: false,
+						unused: true,
+            dead_code: true
+					},
+					output: {
+						comments: false
+					}
+				}
+			}),
     ]
   }
 }

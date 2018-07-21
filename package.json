@@ -4,7 +4,7 @@
     "dev": "webpack-dev-server --content-base docs/",
     "build-dev": "NODE_ENV=development webpack",
     "build": "NODE_ENV=production webpack",
-    "build-publish": "NODE_ENV=production webpack --config=webpack.dist.js",
+    "build-publish": "NODE_ENV=production webpack -p --config=webpack.dist.js",
     "watch": "webpack --watch --progress --colors --display-modules",
     "prepublishOnly": "yarn build-publish"
   },
