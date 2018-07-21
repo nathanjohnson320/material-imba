@@ -157,6 +157,11 @@ var store = {
 			clicked: false
 		}
 	}
+	switch: {
+		switch1: {
+			toggled: false
+		}
+	}
 }
 
 tag DocsAppBar < TopAppBar

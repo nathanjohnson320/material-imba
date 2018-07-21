@@ -15,6 +15,7 @@ import {RadioPage} from "./pages/radio"
 import {SelectPage} from "./pages/select"
 import {SliderPage} from "./pages/slider"
 import {SnackbarPage} from "./pages/snackbar"
+import {SwitchPage} from "./pages/switch"
 
 var base = "/material-imba"
 
@@ -38,3 +39,4 @@ export tag ComponentView
       <SelectPage[data:select] route="{base}/select">
       <SliderPage[data:slider] route="{base}/slider">
       <SnackbarPage[data:snackbar] route="{base}/snackbar">
+      <SwitchPage[data:switch] route="{base}/switch">
