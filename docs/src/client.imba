@@ -216,6 +216,8 @@ tag DocsDrawer < Drawer
 			<List>
 				<ListItem>
 					<a route-to='/material-imba/'> 'Components'
+				<ListItem>
+					<a route-to='/material-imba/theming'> 'Theming'
 				<Divider>
 				for component in data:components
 					<ListItem>

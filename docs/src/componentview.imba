@@ -21,11 +21,14 @@ import {TextfieldPage} from "./pages/textfield"
 import {TopAppBarPage} from "./pages/top-app-bar"
 import {TypographyPage} from "./pages/typography"
 
+import {Theming} from "./pages/theming"
+
 var base = "/material-imba"
 
 export tag ComponentView
   def render
     <self>
+      <Theming route="{base}/theming">
       <ButtonPage[data:button] route="{base}/button">
       <CardPage[data:card] route="{base}/card">
       <CheckboxPage[data:checkbox] route="{base}/checkbox">

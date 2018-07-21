@@ -1,6 +1,7 @@
-/* :root {
-  --mdc-theme-on-secondary: white
-} */
+:root {
+  --mdc-theme-on-secondary: #FFF;
+  --mdc-theme-primary: #C00;
+}
 
 body {
   margin: 0px;
