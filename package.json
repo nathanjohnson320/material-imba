@@ -2,6 +2,7 @@
   "scripts": {
     "start": "imba src/server.imba",
     "dev": "webpack-dev-server --content-base docs/",
+    "doc": "NODE_ENV=production webpack --content-base docs/",
     "build-dev": "NODE_ENV=development webpack",
     "build": "NODE_ENV=production webpack",
     "build-publish": "NODE_ENV=production webpack -p --config=webpack.dist.js",

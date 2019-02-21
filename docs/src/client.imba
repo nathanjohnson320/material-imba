@@ -199,7 +199,8 @@ tag DocsAppBar < TopAppBar
 	def menu
 		<@menu css:display="flex">
 			<IconButton ripple=true onicon="menu" :click="toggle" color="white">
-			<AppBarTitle css:padding-top="8px"> "Material Imba"
+			<AppBarTitle css:padding-top="8px"> 
+				<a css:text-decoration="none" css:color="#FFF" route-to="/material-imba/"> "Material Imba"
 
 	def actions
 		<@actions>
