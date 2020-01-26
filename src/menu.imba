@@ -9,7 +9,7 @@ tag mtl-menu-anchor
     <self.mdc-menu-anchor>
       <slot>
 
-tag mtl-menu < div
+tag mtl-menu
   @corner = Corner.BOTTOM_START
   @items
   @open
@@ -17,7 +17,7 @@ tag mtl-menu < div
   @selected
 
   def mount
-    @menu = MDCMenu.new self
+    @menu = MDCMenu.new self.children[0]
     # Disables the menu animations
     @menu.quickOpen = @quickopen
 
@@ -56,8 +56,9 @@ tag mtl-menu < div
   def render
     @isopen()
 
-    <self .mdc-menu .mdc-menu-surface tabindex="-1">
-      <ul .mdc-list role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-        for item, index in @items
-          <li .mdc-list-item role="menuitem" tabindex=index>
-            item
+    <self>
+      <div .mdc-menu .mdc-menu-surface tabindex="-1">
+        <ul .mdc-list role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+          for item, index in @items
+            <li .mdc-list-item role="menuitem" tabindex=index>
+              item
