@@ -38,8 +38,7 @@ tag mtl-chips
       @model = { selected: [] }
 
   def mount
-    @chipset = MDCChipSet.new self
-    imba.commit
+    @chipset = MDCChipSet.new self.children[0]
 
   def select index
     if @choice
@@ -63,16 +62,17 @@ tag mtl-chips
     trigger('select', @items[index])
 
   def render
-    <self.mdc-chip-set
-      .mdc-chip-set--choice=@choice
-      .mdc-chip-set--filter=@filter
-    >
-      for item,index in @items
-        <mtl-chip
-          :click=["select", index]
-          filter=@filter
-          index=index
-          text=item.text
-          leadingicon=(item.leading && item.icon)
-          trailingicon=(item.trailing && item.icon)
-        >
+    <self>
+      <div.mdc-chip-set
+        .mdc-chip-set--choice=@choice
+        .mdc-chip-set--filter=@filter
+      >
+        for item,index in @items
+          <mtl-chip
+            :click=["select", index]
+            filter=@filter
+            index=index
+            text=item.text
+            leadingicon=(item.leading && item.icon)
+            trailingicon=(item.trailing && item.icon)
+          >

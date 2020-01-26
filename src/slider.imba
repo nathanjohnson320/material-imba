@@ -19,7 +19,6 @@ tag mtl-slider
     self.addEventListener "MDCSlider:change", do
       if @model
         @model.value = @slider.value
-        imba.commit
 
   def render
     <self>

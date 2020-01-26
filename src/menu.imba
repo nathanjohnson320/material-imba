@@ -39,16 +39,14 @@ tag mtl-menu
       @model.selected = detail.index
       @model.open = false
       @open = false
-      imba.commit
 
     self.addEventListener 'MDCMenu:cancel', do |e|
-      if data
+      if @model
         @model.open = false
       @open = false
-      imba.commit
 
   def isopen
-    if @menu && data
+    if @menu && @model
       @menu.open = @model.open
     else if @menu
       @menu.open = @open

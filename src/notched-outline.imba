@@ -7,7 +7,6 @@ tag mtl-notched
 
   def mount
     MDCNotchedOutline.new self.children[0]
-    imba.commit
 
   def render
     <self>

@@ -18,7 +18,6 @@ tag mtl-select
       if @model
         @model.selectedIndex = @select.selectedIndex
         @model.selected = @select.value
-        imba.commit
 
   def isSelected option
     @model.selected == option.value
