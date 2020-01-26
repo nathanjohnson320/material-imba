@@ -1,0 +1,32 @@
+:root {
+  --mdc-theme-on-secondary: #FFF;
+  --mdc-theme-primary: #C00;
+  --mdc-theme-secondary: #0000FF;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-content {
+  padding: 72px 8px 8px 8px;
+  height: calc(100vh - 64px);
+}
+
+.mdc-card__action-buttons {
+  width: 100%;
+}
+
+.component-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.demo-block {
+  padding: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 1px 4px 0  hsla(0, 0%, 0%, 0.1), 0 0px 4px 0 hsla(0, 0%, 0%, 0.1);
+}
